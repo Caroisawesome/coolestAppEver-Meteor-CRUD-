@@ -1,0 +1,55 @@
+<head>
+  <title>Quotable</title>
+</head>
+
+<body>
+  <div class='container'>
+      {{> login}}
+      {{#if currentUser}}{{> enterText}}{{/if}}
+    <div class='body'>
+      {{> list}}
+    </div>
+  </div>
+</body>
+
+<template name="enterText">
+  <h2>How are you feeling today?</h2>
+  <form id="feelings">
+  <input type="text" name="feelings">
+  <input type="submit" id="submit" class="btn btn-success">
+  </form>
+</template>
+
+<template name="list">
+  <h3>People felt this today...</h3>
+     {{#each moods}}
+      <div class="moodsList">
+        <li>
+        {{#if editItem}}{{>editForm}}{{else}}
+        <p><img src="http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons/3d-transparent-glass-icons-sports-hobbies/041964-3d-transparent-glass-icon-sports-hobbies-hot-air-balloon1-sc44.png"/>{{feelings}}</p>
+        <span class="date">{{date}}</span>
+        <span class="email">{{userEmail}}</span> 
+          {{#if userSameAsCurrentUser}}
+            <br><button class="edit btn btn-info">edit</button> <button class="remove btn btn-info">remove</button>
+          {{/if}}
+        {{/if}}
+        </li>
+        </div>
+      {{/each}}
+</template>
+
+<template name="login">
+  <p>{{> loginButtons}}</p>
+</template>
+
+<template name="editForm">
+  <form id="edits">
+  <input type="text" name="editFeelings" value={{editableText.feelings}}>
+  <input type="submit" id="submitEdit" class="btn btn-success" value="save">
+  </form>
+</template>
+
+
+
+
+

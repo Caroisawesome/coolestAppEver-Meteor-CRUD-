@@ -1,0 +1,55 @@
+/* CSS declarations go here */
+
+.container {
+    margin: 0;
+    padding: 10%;
+    background-image: url(http://images.artwanted.com/large/01/45772_903901.jpg);
+    /*background-image: url(http://fc02.deviantart.net/fs70/i/2010/045/2/2/Hot_Air_Balloon_II_by_syncopatedrhythms.jpg);*/
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+.body {
+    margin: 0;
+    width: 100%;
+}
+.email {
+    color:blue;
+    font-size: 0.8em;
+}
+
+.date {
+    font-size: 0.8em;
+}
+
+.moodsList {
+    box-shadow: 0 0 30px black;
+    padding: 5%;
+    margin: 1% auto;
+    width: 50%;
+    background-color: #eeeeee;
+}
+
+form input {
+    width:100%;
+}
+
+h2, h3 {
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    font-style: Helvetica, sans-serif;
+}
+
+li {
+    list-style-type: none;
+}
+
+p {
+    font-size: 1.3em;
+    font-style: Helvetica, sans-serif;
+}
+
+img {
+    width: 10%;
+}
