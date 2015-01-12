@@ -55,7 +55,6 @@ if (Meteor.isClient) {
     editableText: function() {
       var id = Session.get('editedItem');
       var currText = Moods.findOne(id);
-      console.log(currText);
       return currText;
     }
   })

@@ -4,7 +4,6 @@
     margin: 0;
     padding: 10%;
     background-image: url(http://images.artwanted.com/large/01/45772_903901.jpg);
-    /*background-image: url(http://fc02.deviantart.net/fs70/i/2010/045/2/2/Hot_Air_Balloon_II_by_syncopatedrhythms.jpg);*/
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100%;
@@ -28,7 +27,7 @@
     padding: 5%;
     margin: 1% auto;
     width: 50%;
-    background-color: #eeeeee;
+    background-color: white;
 }
 
 form input {
